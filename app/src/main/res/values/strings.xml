@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ATmMachineApp</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="done">Done</string>
+    <string name="card_number">Card number</string>
+    <string name="withdraw_cash">Widthraw cash</string>
+</resources>
