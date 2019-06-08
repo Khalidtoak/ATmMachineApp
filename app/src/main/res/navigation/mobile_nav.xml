@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/mobile_nav">
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mobile_nav"
+            app:startDestination="@id/createCardFragment">
 
+    <fragment android:id="@+id/createCardFragment" android:name="khalid.com.atmmachineapp.CreateCardFragment"
+              android:label="create_card_fragment" tools:layout="@layout/create_card_fragment"/>
+    <fragment android:id="@+id/widthrawMoneyFragment" android:name="khalid.com.atmmachineapp.WidthrawMoneyFragment"
+              android:label="widthraw_money_fragment" tools:layout="@layout/widthraw_money_fragment"/>
 </navigation>

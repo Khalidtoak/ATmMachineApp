@@ -5,4 +5,7 @@
     <string name="done">Done</string>
     <string name="card_number">Card number</string>
     <string name="withdraw_cash">Widthraw cash</string>
+    <string name="create_card">Create card</string>
+    <string name="pin">pin</string>
+    <string name="your_name">Your name</string>
 </resources>

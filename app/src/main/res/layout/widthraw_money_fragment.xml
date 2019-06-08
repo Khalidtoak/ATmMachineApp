@@ -31,9 +31,10 @@
             android:ems="10"
             android:id="@+id/editText"
             android:hint="@string/card_number"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" android:layout_marginTop="64dp"
-            app:layout_constraintBottom_toTopOf="@+id/button2" app:layout_constraintVertical_bias="0.306"/>
+            app:layout_constraintBottom_toTopOf="@+id/button2" app:layout_constraintVertical_bias="0.338"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.459"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,10 +52,12 @@
             android:textColor="@android:color/white"
             android:background="@drawable/buton_background"
             android:id="@+id/button"
+            android:hint="@string/pin"
+            android:layout_margin="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/editText" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="260dp" app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.746"/>
     <Button
             android:text="@string/done"
             android:layout_width="wrap_content"

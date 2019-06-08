@@ -12,11 +12,14 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.915" android:id="@+id/textInputLayout">
+            app:layout_constraintVertical_bias="0.915"
+            app:passwordToggleEnabled="true" android:id="@+id/textInputLayout">
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/name"/>
+                android:hint="@string/pin"
+                android:inputType="numberPassword"
+        android:id="@+id/pin"/>
     </com.google.android.material.textfield.TextInputLayout>
     <ImageView
             android:src="@mipmap/debit_card"
@@ -56,7 +59,7 @@
             android:layout_marginBottom="3dp" app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.448" app:layout_constraintVertical_bias="0.958"/>
     <TextView
-            android:text="Create Card"
+            android:text="@string/create_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -76,7 +79,8 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="hint"/>
+                android:hint="@string/your_name"
+        android:id="@+id/name_text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
