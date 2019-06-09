@@ -1,10 +1,11 @@
-package khalid.com.atmmachineapp
+package khalid.com.atmmachineapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.setupWithNavController
+import khalid.com.atmmachineapp.R
 import kotlinx.android.synthetic.main.activity_options.*
 
 class OptionsActivity : AppCompatActivity() {

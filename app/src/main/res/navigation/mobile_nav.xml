@@ -4,8 +4,8 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mobile_nav"
             app:startDestination="@id/createCardFragment">
 
-    <fragment android:id="@+id/createCardFragment" android:name="khalid.com.atmmachineapp.CreateCardFragment"
+    <fragment android:id="@+id/createCardFragment" android:name="khalid.com.atmmachineapp.ui.CreateCardFragment"
               android:label="create_card_fragment" tools:layout="@layout/create_card_fragment"/>
-    <fragment android:id="@+id/widthrawMoneyFragment" android:name="khalid.com.atmmachineapp.WidthrawMoneyFragment"
+    <fragment android:id="@+id/widthrawMoneyFragment" android:name="khalid.com.atmmachineapp.ui.WidthrawMoneyFragment"
               android:label="widthraw_money_fragment" tools:layout="@layout/widthraw_money_fragment"/>
 </navigation>

@@ -1,4 +1,4 @@
-package khalid.com.atmmachineapp
+package khalid.com.atmmachineapp.ui
 
 import androidx.lifecycle.ViewModel
 

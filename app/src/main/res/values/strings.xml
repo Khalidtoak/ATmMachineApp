@@ -8,4 +8,7 @@
     <string name="create_card">Create card</string>
     <string name="pin">pin</string>
     <string name="your_name">Your name</string>
+    <string name="make_widthrawal">Make widthrawal</string>
+    <string name="find_card">Find card</string>
+    <string name="amount">amount</string>
 </resources>

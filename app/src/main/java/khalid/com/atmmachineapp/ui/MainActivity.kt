@@ -1,12 +1,11 @@
-package khalid.com.atmmachineapp
+package khalid.com.atmmachineapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
-import android.os.Build
-
+import khalid.com.atmmachineapp.R
 
 
 class MainActivity : AppCompatActivity() {
