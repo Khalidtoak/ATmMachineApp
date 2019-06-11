@@ -61,34 +61,30 @@ class CreateCardFragment : FireBaseFragment() {
         textView.text = CreditCardNumberGenerator.generate("5399", 16)
 
         progressBar.visibility = View.VISIBLE
-        val collectionReference = firestore.collection("cards")
-        val query = collectionReference.whereEqualTo("name", name_text.text.toString())
-        query.get().addOnSuccessListener { querySnapshot ->
-            if (
-                querySnapshot.isEmpty) {
-                collectionReference
-                    .add(
-                        Card(
-                            textView2.text.toString(),
-                            pin.text.toString(),
-                            10000,
-                            CreditCardNumberGenerator.generate("5399", 16)
-                        )).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            progressBar.visibility = View.INVISIBLE
-                            showSnackbar(view, "Card created and credited successfully")
-                        } else {
-                            progressBar.visibility = View.INVISIBLE
-                            showSnackbar(view, "Could not create card")
-                        }
+        val doocumentReference = firestore.collection("cards").document(name_text.text.toString())
+        doocumentReference.get().addOnSuccessListener {document->
+            if (document.exists()){
+                showSnackbar(view , "Card with that name already exists")
+            }
+            else{
+                doocumentReference.set(Card(
+                    textView2.text.toString(),
+                    pin.text.toString(),
+                    10000,
+                    CreditCardNumberGenerator.generate("5399", 16)
+                ), SetOptions.merge()).addOnCompleteListener { task ->
+                    if (task.isSuccessful){
+                        progressBar.visibility = View.INVISIBLE
+                        showSnackbar(view, "Card created and credited successfully")
                     }
-            } else {
-                showSnackbar(view, "card with that name already exists")
-                name_text.error = "card with that name already exists"
-                progressBar.visibility = View.INVISIBLE
+                    else {
+                        progressBar.visibility = View.INVISIBLE
+                        showSnackbar(view, "Could not create card")
+                    }
+                }
             }
         }.addOnFailureListener {
-            showSnackbar(view, "couldn't save card, please retry")
+            showSnackbar(view, "couldn't save card,please retry")
         }
     }
 

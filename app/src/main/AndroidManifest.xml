@@ -11,6 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.ReceiptActivity">
+        </activity>
         <activity android:name=".FirebaseActivity">
         </activity>
         <activity android:name=".ui.OptionsActivity">
