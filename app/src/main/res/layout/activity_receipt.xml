@@ -7,4 +7,66 @@
         android:layout_height="match_parent"
         tools:context=".ui.ReceiptActivity">
 
+    <TextView
+            android:text="@string/transaction_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+
+            android:padding="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.083"/>
+    <TextView
+            android:text="@string/amount_withdrawn"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView11" app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintBottom_toTopOf="@+id/textView12"/>
+    <TextView
+            tools:text="#2000"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintBottom_toTopOf="@+id/textView13"/>
+    <TextView
+            tools:text="Withdrawal Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/textView12" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView13" app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintBottom_toTopOf="@+id/textView14" app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.745"/>
+    <TextView
+            tools:text="2:00pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/textView13" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintBottom_toTopOf="@+id/textView15" app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.75"/>
+    <TextView
+            android:text="@string/account_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+
+            android:id="@+id/textView14" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView15" app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.368"/>
+    <TextView
+            tools:text="500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:padding="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.367"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

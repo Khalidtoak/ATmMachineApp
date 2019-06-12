@@ -1,5 +1,6 @@
 package khalid.com.atmmachineapp.ui
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.text.Editable
@@ -13,6 +14,9 @@ import khalid.com.atmmachineapp.*
 import khalid.com.atmmachineapp.model.Card
 import khalid.com.atmmachineapp.utils.CreditCardNumberGenerator
 import kotlinx.android.synthetic.main.create_card_fragment.*
+import kotlinx.android.synthetic.main.create_card_fragment.name_text
+import kotlinx.android.synthetic.main.create_card_fragment.pin
+import kotlinx.android.synthetic.main.widthraw_money_fragment.*
 
 
 class CreateCardFragment : FireBaseFragment() {

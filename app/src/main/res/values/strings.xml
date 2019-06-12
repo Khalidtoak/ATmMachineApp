@@ -11,4 +11,8 @@
     <string name="make_widthrawal">Make widthrawal</string>
     <string name="find_card">Find card</string>
     <string name="amount">amount</string>
+    <string name="amount_withdrawn">Amount withdrawn</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="account_balance">Account balance</string>
+    <string name="check_balance">check balance</string>
 </resources>
